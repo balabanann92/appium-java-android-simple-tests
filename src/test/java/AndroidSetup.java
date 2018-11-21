@@ -1,7 +1,8 @@
-import java.net.URL;
-
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.URL;
 
 public class AndroidSetup {
     private String automationName;
@@ -40,7 +41,7 @@ public class AndroidSetup {
     }
 
     //Factory method that creates new instance of Android Driver related to passed setup parameter
-    public static AndroidDriver<?> getDriver(AndroidSetup setup) throws Exception {
+    public static AndroidDriver<AndroidElement> getDriver(AndroidSetup setup) throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("automationName", setup.automationName);
         capabilities.setCapability("appiumVersion", setup.appiumVersion);
@@ -50,6 +51,6 @@ public class AndroidSetup {
         capabilities.setCapability("udid", setup.udid);
         capabilities.setCapability("appPackage", setup.appPackage);
         capabilities.setCapability("appActivity", setup.appActivity);
-        return new AndroidDriver<>(new URL(setup.url), capabilities);
+        return new AndroidDriver<AndroidElement>(new URL(setup.url), capabilities);
     }
 }
