@@ -4,18 +4,19 @@ import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.CoreMatchers.containsString;
 
 
 public class YouTubeSearch {
   public static AndroidDriver<AndroidElement> mobiledriver;
-  public static int elementPresetTimeout = 15;
+  public static int elementPresetTimeout = 1500;
 
-  // TouchAction action = new TouchAction(mobiledriver);
+
 
     @BeforeTest
     public void setUp() throws Exception{
@@ -29,33 +30,39 @@ public class YouTubeSearch {
         String searchText = "Appium";
 
         //When
-//       mobiledriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        isElementPresent(mobiledriver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"Search\"]")), elementPresetTimeout);
-        AndroidElement searchImageView = mobiledriver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"Search\"]"));
-//        isElementPresent(searchImageView, elementPresetTimeout);
+        //mobiledriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+        //Assert searchImageView
+        String searchImageViewXPath = "//android.widget.ImageView[@content-desc=\"Search\"]";
+        By searchImageViewBy = By.xpath(searchImageViewXPath);
+        boolean isSearchImageViewPresent = waitForPresence(mobiledriver, 100, searchImageViewBy);
+        Assert.assertTrue(isSearchImageViewPresent);
+
+        //Click searchImageView
+        AndroidElement searchImageView = mobiledriver.findElement(By.xpath(searchImageViewXPath));
         searchImageView.click();
-        //mobiledriver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"Search\"]")).click();
 
-        //AndroidElement searchTextView = mobiledriver.findElementById("com.google.android.youtube:id/search_edit_text");
-        //isElementPresent(searchTextView, elementPresetTimeout);
-        //searchTextView.sendKeys(searchText + "\n");
-        mobiledriver.findElementById("com.google.android.youtube:id/search_edit_text").sendKeys(searchText + "\n");
+        //Assert searchEditText
+        String searchEditTextId = "com.google.android.youtube:id/search_edit_text";
+        By searchEditTextBy = By.id(searchEditTextId);
+        boolean isSearchEditTextPresent = waitForPresence(mobiledriver, 100, searchEditTextBy);
+        Assert.assertTrue(isSearchEditTextPresent);
 
+        //Input searchText in to searchTextView
+        AndroidElement searchTextView = mobiledriver.findElement(searchEditTextBy);
+        searchTextView.sendKeys(searchText + "\n");
 
         // Then
-     //   mobiledriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    //    AndroidElement title = mobiledriver.findElementById("com.google.android.youtube:id/title");
+        //Assert title
+        String titleId = "com.google.android.youtube:id/title";
+        By titleBy = By.id(titleId);
+        boolean isTitlePresent = waitForPresence(mobiledriver, 100, titleBy);
+        Assert.assertTrue(isTitlePresent);
 
-        isElementPresent(mobiledriver.findElementById("com.google.android.youtube:id/title"),elementPresetTimeout);
-      //  AndroidElement title = mobiledriver.findElementById("com.google.android.youtube:id/title");
-      //  isElementPresent(title,elementPresetTimeout);
-      //  System.out.println( mobiledriver.findElementById("com.google.android.youtube:id/title"));
-
-        String actualText = mobiledriver.findElementById("com.google.android.youtube:id/title").getText();
-     //   String actualText = title.getText();
-        //System.out.println(actualText);
+        //Assert input search text
+        AndroidElement title = mobiledriver.findElement(titleBy);
+        String actualText = title.getText();
         MatcherAssert.assertThat(actualText, containsString(searchText));
-
     }
 
     @AfterTest
@@ -65,15 +72,19 @@ public class YouTubeSearch {
 
     }
 
-    public boolean isElementPresent(AndroidElement title, int timeout){
+    public static boolean waitForPresence(AndroidDriver driver, int timeLimitInSeconds, By by){
         try{
-            WebDriverWait wait = new WebDriverWait(mobiledriver, timeout, 10000);
-            wait.until(ExpectedConditions.visibilityOf(title));
-            return true;
+            AndroidElement mobileElement = (AndroidElement) driver.findElement(by);
+            WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
+            wait.until(ExpectedConditions.visibilityOf(mobileElement));
+            boolean isElementPresent = mobileElement.isDisplayed();
+            return isElementPresent;
         }catch(Exception e){
+            System.out.println(e.getMessage());
             return false;
         }
-    } }
+    }
+}
 
 
 
