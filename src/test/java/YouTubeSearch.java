@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.Matchers.containsString;
 
 
 public class YouTubeSearch {
@@ -47,17 +47,19 @@ public class YouTubeSearch {
         String titleId = "com.google.android.youtube:id/title";
         By titleBy = By.id(titleId);
 
-        AndroidElement title = (AndroidElement) mobiledriver.findElements(titleBy).get(0);
         WebDriverWait wait = new WebDriverWait(mobiledriver, elementPresetTimeout);
-        wait.until(ExpectedConditions.visibilityOf(title));
+        //wait.until(ExpectedConditions.visibilityOf(titleBy));
         wait.until(ExpectedConditions.presenceOfElementLocated(titleBy));
-        wait.until(ExpectedConditions.elementToBeClickable(title));
+        wait.until(ExpectedConditions.elementToBeClickable(titleBy));
 
-        //AndroidElement title = waitForPresence(mobiledriver, elementPresetTimeout, titleBy);
-        Assert.assertTrue(title.isDisplayed());
+        mobiledriver.findElementById(titleId).click();
+        String searchTitleId = "com.google.android.youtube:id/playlist_title";
+        By searchTitleBy = By.id(searchTitleId);
+        AndroidElement searchTitle = waitForPresence(mobiledriver, elementPresetTimeout, searchTitleBy);
+        Assert.assertTrue(searchTitle.isDisplayed());
 
         //Assert input search text
-        String actualText = title.getText();
+        String actualText = mobiledriver.findElement(searchTitleBy).getText();
         MatcherAssert.assertThat(actualText, containsString(searchText));
     }
 
@@ -68,7 +70,7 @@ public class YouTubeSearch {
 
     public static AndroidElement waitForPresence(AndroidDriver driver, int timeLimitInSeconds, By by) throws Exception {
         try {
-            AndroidElement mobileElement = (AndroidElement) driver.findElement(by);
+            AndroidElement mobileElement = (AndroidElement) mobiledriver.findElement(by);
             WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
             wait.until(ExpectedConditions.visibilityOf(mobileElement));
             wait.until(ExpectedConditions.presenceOfElementLocated(by));

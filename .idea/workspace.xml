@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6227356-10b9-469a-b1b8-088250cad9ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/YouTubeSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/YouTubeSearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/YouTubeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/YouTubeSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,14 +65,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="19" />
-          <entry key="java" value="4673" />
+          <entry key="java" value="4807" />
           <entry key="txt" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="19" />
-          <entry key="JAVA" value="4673" />
+          <entry key="JAVA" value="4807" />
           <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
@@ -85,10 +83,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/YouTubeSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+            <state relative-caret-position="154">
+              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
               <folding>
-                <marker date="1543358805940" expanded="true" signature="427:3268" ph="..." />
+                <marker date="1543411498394" expanded="true" signature="425:3416" ph="..." />
               </folding>
             </state>
           </provider>
@@ -523,7 +521,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543358886282" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543439466695" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Atlassian/SourceTree/git_local/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -686,34 +684,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 05m 09s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 43m 10s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 06m 08s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 44m 26s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 09m 44s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 45m 34s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 11m 14s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 48m 06s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 12m 24s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 49m 17s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 14m 49s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 51m 17s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 28m 00s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 15h 04m 22s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 38m 11s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 15h 12m 06s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 40m 22s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 15h 20m 01s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 00h 44m 36s.xml">
+    <history-entry file="YouTubeSearch - 2018.11.28 at 15h 26m 35s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1122,10 +1120,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/YouTubeSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101">
-          <caret line="53" column="67" lean-forward="true" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
+        <state relative-caret-position="154">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
           <folding>
-            <marker date="1543358805940" expanded="true" signature="427:3268" ph="..." />
+            <marker date="1543411498394" expanded="true" signature="425:3416" ph="..." />
           </folding>
         </state>
       </provider>
