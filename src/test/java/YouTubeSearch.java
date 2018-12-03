@@ -29,11 +29,13 @@ public class YouTubeSearch {
 
         //When
         //SearchImageView
+        MobileAction mobileAction = new MobileAction(mobiledriver);
         String searchImageViewXPath = "//android.widget.ImageView[@content-desc=\"Search\"]";
         By searchImageViewBy = By.xpath(searchImageViewXPath);
         AndroidElement searchImageView = waitForPresence(mobiledriver, elementPresetTimeout, searchImageViewBy);
         Assert.assertTrue(searchImageView.isDisplayed());
-        searchImageView.click();
+        //searchImageView.click();
+        mobileAction.tapByElement(searchImageView);
 
         //SearchEditText
         String searchEditTextId = "com.google.android.youtube:id/search_edit_text";

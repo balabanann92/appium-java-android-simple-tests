@@ -52,5 +52,6 @@ public class AndroidSetup {
         capabilities.setCapability("appPackage", setup.appPackage);
         capabilities.setCapability("appActivity", setup.appActivity);
     return new AndroidDriver<AndroidElement>(new URL(setup.url), capabilities);
+
     }
 }

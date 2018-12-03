@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6227356-10b9-469a-b1b8-088250cad9ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AndroidSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AndroidSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TouchActionTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/YouTubeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/YouTubeSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,7 +50,7 @@
           <entry key="class" value="1" />
           <entry key="gradle" value="7" />
           <entry key="gradlew" value="2" />
-          <entry key="java" value="74" />
+          <entry key="java" value="77" />
           <entry key="properties" value="1" />
           <entry key="xml" value="3" />
         </counts>
@@ -56,7 +59,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="7" />
-          <entry key="JAVA" value="74" />
+          <entry key="JAVA" value="77" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="1" />
           <entry key="XML" value="3" />
@@ -65,14 +68,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="19" />
-          <entry key="java" value="4807" />
+          <entry key="java" value="4876" />
           <entry key="txt" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="19" />
-          <entry key="JAVA" value="4807" />
+          <entry key="JAVA" value="4876" />
           <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
@@ -80,13 +83,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/YouTubeSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+            <state relative-caret-position="-85">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
               <folding>
-                <marker date="1543411498394" expanded="true" signature="425:3416" ph="..." />
+                <marker date="1543877246582" expanded="true" signature="425:3540" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/AndroidSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MobileAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2373#2374#0" expanded="true" />
+                <element signature="e#2409#2410#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -426,16 +455,17 @@
         <option value="$PROJECT_DIR$/src/test/java/Base.java" />
         <option value="$PROJECT_DIR$/src/test/java/Setup.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/TouchActionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TouchAction.java" />
         <option value="$PROJECT_DIR$/src/test/java/AndroidSetup.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TouchActionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/YouTubeSearch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MobileAction.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="340" />
-    <option name="y" value="166" />
+    <option name="x" value="-141" />
+    <option name="y" value="8" />
     <option name="width" value="1089" />
     <option name="height" value="718" />
   </component>
@@ -521,7 +551,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543439466695" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543877552795" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Atlassian/SourceTree/git_local/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -684,21 +714,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 43m 10s.xml">
-      <configuration name="YouTubeSearch" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 44m 26s.xml">
-      <configuration name="YouTubeSearch" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 45m 34s.xml">
-      <configuration name="YouTubeSearch" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 48m 06s.xml">
-      <configuration name="YouTubeSearch" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="YouTubeSearch - 2018.11.28 at 14h 49m 17s.xml">
-      <configuration name="YouTubeSearch" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="YouTubeSearch - 2018.11.28 at 14h 51m 17s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
@@ -712,6 +727,21 @@
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
     <history-entry file="YouTubeSearch - 2018.11.28 at 15h 26m 35s.xml">
+      <configuration name="YouTubeSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="YouTubeSearch - 2018.11.28 at 23h 11m 23s.xml">
+      <configuration name="YouTubeSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="YouTubeSearch - 2018.12.04 at 00h 35m 32s.xml">
+      <configuration name="YouTubeSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="YouTubeSearch - 2018.12.04 at 00h 44m 15s.xml">
+      <configuration name="YouTubeSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="YouTubeSearch - 2018.12.04 at 00h 45m 49s.xml">
+      <configuration name="YouTubeSearch" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="YouTubeSearch - 2018.12.04 at 00h 49m 06s.xml">
       <configuration name="YouTubeSearch" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -823,16 +853,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated test with explicit wait" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TouchActionTest.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="mobiledriver" language="JAVA" />
@@ -981,16 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AndroidSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.14.0/8c0af6fdccdc89a4394de7e3a8817ed2d6e41d7d/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/interactions/internal/TouchAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1118,12 +1128,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TouchAction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AndroidSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/YouTubeSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state relative-caret-position="-85">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
           <folding>
-            <marker date="1543411498394" expanded="true" signature="425:3416" ph="..." />
+            <marker date="1543877246582" expanded="true" signature="425:3540" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MobileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2373#2374#0" expanded="true" />
+            <element signature="e#2409#2410#0" expanded="true" />
           </folding>
         </state>
       </provider>
