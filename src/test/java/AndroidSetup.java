@@ -20,7 +20,7 @@ public class AndroidSetup {
                         String deviceName, String udid,
                         String appPackage, String appActivity) {
         this.automationName = "Appium";
-        this.appiumVersion = "1.9.1";
+        this.appiumVersion = "1.10.0";
         this.platformName = "Android";
         this.platformVersion = platformVersion;
         this.deviceName = deviceName;
@@ -51,7 +51,6 @@ public class AndroidSetup {
         capabilities.setCapability("udid", setup.udid);
         capabilities.setCapability("appPackage", setup.appPackage);
         capabilities.setCapability("appActivity", setup.appActivity);
-    return new AndroidDriver<AndroidElement>(new URL(setup.url), capabilities);
-
+        return new AndroidDriver<AndroidElement>(new URL(setup.url), capabilities);
     }
 }
