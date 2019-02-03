@@ -1,6 +1,6 @@
 import io.appium.java_client.MobileElement;
 
-public class ElementsExtension {
+public class Elements {
     public static boolean isElementVisible(MobileElement mobileElement) {
         return mobileElement.isDisplayed();
     }

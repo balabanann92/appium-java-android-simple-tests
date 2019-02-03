@@ -127,7 +127,7 @@ public class MobileAction {
         int counter = 0;
         while (true && counter <= maxRepeatCount) {
             counter ++;
-            if (ElementsExtension.isElementPresent(element)) {
+            if (Elements.isElementPresent(element)) {
                 System.out.println(element.getText());
                 break;
             } else {
