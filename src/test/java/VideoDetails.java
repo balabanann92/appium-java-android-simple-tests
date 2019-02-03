@@ -1,20 +1,26 @@
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.PageFactory;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class ScrollToComments extends Base {
+public class VideoDetails extends Base {
+    VideoPage objVideo;
 
     @Test
-    public void testCommentsVisibility() throws Exception {
-        PageFactory.initElements(new AppiumFieldDecorator(mobiledriver), this);
+    public void testStopVideo() throws Exception {
+       PageFactory.initElements(new AppiumFieldDecorator(mobiledriver), this);
+
+
+        objVideo = new VideoPage(mobiledriver);
+
         //Given
         String searchText = "Appium";
 
         //When
         //SearchImageView
         MobileAction mobileAction = new MobileAction(mobiledriver);
+
         AndroidElement searchImageView = waitForPresence(mobiledriver, elementPresetTimeout, searchImageViewBy);
         Assert.assertTrue(searchImageView.isDisplayed());
         mobileAction.tapByElement(searchImageView);
@@ -25,25 +31,20 @@ public class ScrollToComments extends Base {
         searchTextView.sendKeys(searchText + "\n");
 
         //Wait for title
-        Thread.sleep(2000);
-        mobileAction.verticalSwipeByPercentages(0.8, 0.2, 0.5);
-        mobileAction.verticalSwipeByPercentages(0.8, 0.3, 0.5);
         videoDetails.click();
         Thread.sleep(4000);
         AndroidElement channelTitle = waitForPresence(mobiledriver, elementPresetTimeout, channelTitleBy);
         Assert.assertTrue(channelTitle.isDisplayed());
 
-        //Scroll to comment
-        Thread.sleep(5000);
-        mobileAction.scrollDownToElement(androidComment, 10);
+        //Video player interaction
+        objVideo.player.click();
+        waitForElement(objVideo.videoPlayerOverlays, mobiledriver, elementPresetTimeout);
+        objVideo.playPauseButton.click();
 
-        //Then
-        //Assert comment
-        Assert.assertTrue(Elements.isElementVisible(androidComment));
+        //Video overlay disappear after few seconds of video playing
+        //Waiting for this delay and verify, that play element visible
+        Thread.sleep(3000);
+        Assert.assertTrue(Elements.isElementPresent(objVideo.videoPlayerOverlays));
     }
 }
 
-//удалить скролл по поиску
-//элемент видимый в басе
-// цыкл по скролу до эл в мобэкшен
-//остановить проигр видоса и проверить на кнопку плей
